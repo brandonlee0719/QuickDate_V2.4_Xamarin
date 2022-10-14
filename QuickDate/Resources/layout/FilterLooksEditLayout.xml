@@ -1,0 +1,128 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:id="@+id/lyt_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <!--Body Section -->
+                <LinearLayout
+                    android:id="@+id/LayoutBody"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconBody"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/BodyEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Lbl_Body"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+               
+                <!--Height Section --> 
+                <LinearLayout
+                    android:id="@+id/LayoutHeight"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="48dp">
+                    <TextView
+                        android:id="@+id/IconHeight"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="#"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorSecText"
+                        android:layout_marginStart="5dp" />
+                    <EditText
+                        android:id="@+id/FromHeightEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:hint="@string/Lbl_FromHeight"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginStart="3dp" />
+                    <EditText
+                        android:id="@+id/ToHeightEditText"
+                        style="@style/EditTextNormalStyle"
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/EditTextStyleOne"
+                        android:layout_alignParentEnd="true"
+                        android:hint="@string/Lbl_ToHeight"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginStart="3dp" />
+                </LinearLayout>
+                <!--Ads section-->
+                <View 
+                  android:layout_height="20dp"
+                  android:layout_width="match_parent" />
+                <com.google.android.gms.ads.doubleclick.PublisherAdView
+	                android:id="@+id/multiple_ad_sizes_view"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:clickable="true"
+	                app:adSize="MEDIUM_RECTANGLE,120x20,250x250,320x100,SMART_BANNER"
+	                app:adUnitId="@string/banner_multiple_ad_sizes_id" />
+                <View 
+                  android:layout_height="?android:attr/actionBarSize"
+                  android:layout_width="match_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

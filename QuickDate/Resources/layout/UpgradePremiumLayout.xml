@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:background="?attr/colorPrimary"
+	android:padding="5dp"
+	android:layout_marginEnd="0dp"
+	android:layout_marginStart="0dp"
+	android:layout_height="match_parent">
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/nested_scroll_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="?attr/colorPrimary"
+		android:clipToPadding="false"
+		android:scrollbars="none"
+		android:scrollingCache="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/lyt_form"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="0dp">
+			<TextView
+				android:id="@+id/mainText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="start"
+				android:textAlignment="textStart"
+				android:layout_marginTop="15dp"
+				android:textStyle="bold"
+				android:text="@string/Lbl_UpgradePremium"
+				android:layout_marginStart="10dp"
+				android:textSize="24sp"
+				android:layout_marginBottom="0dp" />
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="?attr/colorSecText"
+				android:gravity="start"
+				android:textAlignment="textStart"
+				android:layout_marginTop="8dp"
+				android:text="@string/Lbl_UpgradePremiumMainText"
+				android:layout_marginStart="10dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="16sp"
+				android:layout_marginBottom="0dp" />
+
+			<TextView
+				android:id="@+id/qusionText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="start"
+				android:textAlignment="textStart"
+				android:layout_marginTop="30dp"
+				android:textStyle="bold"
+				android:text="Why Choose Premium Membership?"
+				android:layout_marginStart="10dp"
+				android:textSize="17sp"
+				android:layout_marginBottom="0dp" />
+
+			<TextView
+				android:id="@+id/NameText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="10dp"
+				android:text="@string/Lbl_SeeMoreStickers"
+				app:layout_columnWeight="1"
+				android:gravity="start|center"
+				android:drawableStart="@drawable/icon_p_1_vector"
+				android:drawableTint="#E53935"
+				style="@style/CustomTextdrawableStyle"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="9dp"
+				android:layout_marginBottom="2dp" />
+
+			<TextView
+				android:id="@+id/GenderText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="10dp"
+				android:text="@string/Lbl_ShowInPremium"
+				app:layout_columnWeight="1"
+				android:gravity="start"
+				android:drawableStart="@drawable/icon_p_2_vector"
+				android:drawableTint="#8e24aa"
+				style="@style/CustomTextdrawableStyle"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginBottom="2dp" />
+
+			<TextView
+				android:id="@+id/BirthdayText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="5dp"
+				android:text="@string/Lbl_SeeLikesNotifications"
+				app:layout_columnWeight="1"
+				android:gravity="start"
+				android:drawableStart="@drawable/icon_p_3_vector"
+				android:drawableTint="#d81b60"
+				style="@style/CustomTextdrawableStyle"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginBottom="2dp" />
+
+			<TextView
+				android:id="@+id/LocationText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="5dp"
+				android:text="@string/Lbl_GetDiscountBuyBoostMe"
+				app:layout_columnWeight="1"
+				android:gravity="start"
+				android:drawableStart="@drawable/icon_p_4_vector"
+				android:drawableTint="#00897b"
+				style="@style/CustomTextdrawableStyle"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginBottom="2dp" />
+
+			<TextView
+				android:id="@+id/preferred_language_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="10dp"
+				android:text="@string/Lbl_DisplayFirstInFindMatches"
+				app:layout_columnWeight="1"
+				android:gravity="start"
+				android:drawableStart="@drawable/icon_p_6_vector"
+				android:drawableTint="#3949ab"
+				style="@style/CustomTextdrawableStyle"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginBottom="2dp" />
+
+			<TextView
+				android:id="@+id/relationship_status_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="10dp"
+				android:text="@string/Lbl_DisplayFirstInRandomUsers"
+				app:layout_columnWeight="1"
+				android:gravity="start"
+				style="@style/CustomTextdrawableStyle"
+				android:drawableStart="@drawable/icon_p_5_vector"
+				android:drawableTint="#1E88E5"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginBottom="2dp" />
+
+
+			<TextView
+				android:id="@+id/unlimtedvideo_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/CustomTextdrawableStyle"
+				android:layout_marginEnd="10dp"
+				android:text="Create unlimited video and audio calls."
+				app:layout_columnWeight="1"
+				android:gravity="start"
+				android:drawableStart="@drawable/icon_p_7_vector"
+				android:drawableTint="#d81b60"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginBottom="2dp" />
+
+			<TextView
+				android:id="@+id/Findpotential_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/CustomTextdrawableStyle"
+				android:layout_marginEnd="10dp"
+				android:text="Find potential matches by country."
+				app:layout_columnWeight="1"
+				android:gravity="start"
+				android:drawableStart="@drawable/icon_p_8_vector"
+				android:drawableTint="#3949ab"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginBottom="2dp" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyler"
+				android:layout_marginTop="15dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="4dp"
+				android:scrollbars="vertical"
+				android:layout_marginStart="0dp"
+				android:layout_marginEnd="0dp"
+				android:paddingBottom="0dp" />
+			<Button
+				android:id="@+id/skippButton"
+				android:background="@drawable/shape_radius_line_colored"
+				android:layout_height="48dp"
+				android:layout_width="match_parent"
+				android:padding="5dp"
+				style="@style/Base.TextAppearance.AppCompat.Body1"
+				android:text="@string/Btn_SkipPremium"
+				android:textColor="?android:attr/colorAccent"
+				android:textSize="15sp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:clickable="true"
+				android:textAllCaps="false"
+				android:layout_marginEnd="15dp"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="20dp"
+				android:gravity="center"
+				android:elevation="0dp" />
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</LinearLayout>

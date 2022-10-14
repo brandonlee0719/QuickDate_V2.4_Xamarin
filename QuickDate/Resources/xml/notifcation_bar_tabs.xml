@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+	<tab
+		drawable="@drawable/icon_matches_n_vector"
+		text="@string/Lbl_Matches" />
+
+	<tab
+		drawable="@drawable/icon_visitors_n_vector"
+		text="@string/Lbl_Visits" />
+
+	<tab
+		drawable="@drawable/icon_likes_n_vector"
+		text="@string/Lbl_Likes" />
+
+	<tab
+		drawable="@drawable/icon_friendrequests_n_vector"
+		text="@string/Lbl_Requests" />
+</tabs>
